@@ -19,11 +19,27 @@ html{
     font-family: 'Poppins', sans-serif;
 }
 
+.hidden{
+    display: none;
+}
+
+header{
+    /* padding: 0 16px; */
+}
+
+.container{
+    /* padding: 16px; */
+    display: flex;
+    flex-direction: column;
+    margin: 16px auto;
+    /* width: 425px; */
+}
+
 .header{
-    padding: 16px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 16px 10px;
     border-bottom: 1px solid #e5e7eb;
 }
 
@@ -82,5 +98,44 @@ html{
     font-size: 14px;
     line-height: 20px;
     font-weight: 600;
+    cursor: pointer;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 16px 25px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.navbar-icon i{
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.navbar-search{
+    position: relative;
+}
+
+.navbar-search input{
+    padding: 15px;
+    border-radius: 30px;
+    width: 300px;
+    border: 1px solid #e5e7eb;
+}
+
+.navbar-search input::placeholder{
+    font-size: 17px;
+}
+
+.navbar-search i{
+    position: absolute;
+    top: 16px;
+    right: 20px;
+}
+
+.navbar-basket i{
+    font-size: 25px;
     cursor: pointer;
 }
