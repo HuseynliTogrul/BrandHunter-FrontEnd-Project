@@ -1,0 +1,150 @@
+.main{
+    display: flex;
+    padding: 25px 0;
+    margin: 15px 25px 0 25px;
+    gap: 50px;
+}
+
+.main-category{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.item{
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    background: #e5e7eb;
+    font-weight: 600;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.item:hover{
+    background: #ffdcdc;
+    /* border: none; */
+}
+
+.item-header {
+    padding: 10px;
+    border-bottom: 1px solid #e5e7eb;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.item-list ul li{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    padding: 6px 10px;
+    font-weight: 400;
+}
+
+.item-list ul li:last-child{
+    padding-bottom: 12px;
+}
+
+.item-list ul li:hover{
+    background: #e8eaee;
+}
+
+.item-list ul li p{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.item-list ul li p span{
+    padding-left: 10px;
+    border-left: 1px solid #e8eaee;
+}
+
+/* .item-list ul li .colorB{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: black;
+} */
+
+.product-sort{
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    background: #e5e7eb;
+    font-weight: 600;
+    cursor: pointer;
+    overflow: hidden;
+    width: fit-content;
+    margin-bottom: 30px;
+}
+
+.product-sort .item-header{
+    gap: 40px;
+    border-bottom: 1px solid #c4c5c8;
+    border: none;
+}
+
+.sort-list{
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.sort-list ul li{
+    padding: 5px 20px 5px 10px;
+}
+
+.sort-list ul li:hover{
+    background: #ffdcdc;
+}
+
+.products{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+}
+
+.product-item img{
+    height: 260px;
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    transition: all 0.3s;
+    /* border: 1px solid #c4c5c8;
+    overflow: hidden; */
+}
+
+.product-item img:hover{
+    border: 1px solid #ff000047;
+}
+
+.product-item p{
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.product-item span{
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.product-btn{
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+    padding: 20px;
+    border-bottom: 1px solid #c4c5c8;
+    text-align: center;
+}
+
+.product-btn button{
+    padding: 8px 15px;
+    border-radius: 30px;
+    background-color: inherit;
+    cursor: pointer;
+}
+
+.product-btn button:hover{
+    background-color: #c4c5c847;
+}
