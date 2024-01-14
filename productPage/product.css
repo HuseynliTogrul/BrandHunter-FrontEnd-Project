@@ -148,3 +148,32 @@
 .product-btn button:hover{
     background-color: #c4c5c847;
 }
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .main-category{
+        display: none;
+    }
+    
+    .product-sort {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .main-category{
+        display: none;
+    }
+
+    .product-sort {
+        width: 100%;
+    }
+
+    .products {
+        grid-template-columns: repeat(2,1fr);
+     }
+
+     .main-product{
+        width: 100%;
+     }
+}

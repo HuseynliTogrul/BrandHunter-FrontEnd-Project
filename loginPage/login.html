@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./login.css">
 </head>
 
 <body>
@@ -17,8 +18,8 @@
         <div class="container">
             <div class="header">
                 <div class="logo">
-                    <a href="index.html" class="hidden">BrandHunter</a>
-                    <img src="./assets/icons/logo.svg" alt="Logo">
+                    <a href="../index.html" class="hidden">BrandHunter</a>
+                    <img src="../assets/icons/logo.svg" alt="Logo">
                 </div>
                 <div class="menu-list">
                     <ul class="hidden">
@@ -40,7 +41,7 @@
                     <div class="bar-top">
                         <ul>
                             <Li>
-                                <a href="../productPage/product.html">Yeni gələnlər</a>
+                                <a href="#">Yeni gələnlər</a>
                             </Li>
                             <Li>
                                 <a href="../productPage/product.html">Mağaza</a>
@@ -164,64 +165,69 @@
     <main>
         <div class="container">
             <div class="main">
-                <div class="img-bg">
-                    <div class="img-bg-top">
-                        <img src="./assets/icons/logo.svg" alt="Logo">
-                    </div>
-                    <div class="img-bg-bottom">
-                        <p>All of your favorite brands in one place</p>
-                        <div class="img-bg-btn">
-                            <!-- <button class="btn-2023">
-                                2023 Look book
-                            </button>
-                            <button class="gostore">
-                                <a href="./productPage/product.html" class="goStore">Mağazaya keç</a>
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </button> -->
-                            <a href="./index.html">2023 Look book</a>
-                            <a href="./productPage/product.html">
-                                <p>Mağazaya keç</p>
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </a>
+                <div class="main-left">
+                    <h1>Müştəri məlumatları</h1>
+                    <div class="login-form">
+                        <div class="login-input">
+                            <p>Ad <span>*</span></p>
+                            <input type="text">
                         </div>
+                        <div class="login-input">
+                            <p>Soyad <span>*</span></p>
+                            <input type="text">
+                        </div>
+                        <div class="login-input">
+                            <p>Email <span>*</span></p>
+                            <input type="text">
+                        </div>
+                        <div class="login-input">
+                            <p>Əlaqə Nömrəsi <span>*</span></p>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="login-adres">
+                        <p>Ünvan <span class="address">(Seçimlik)</span></p>
+                        <input type="text">
+                    </div>
+                    <div class="input-checkbox">
+                        <input type="checkbox" name="" id="">
+                        <p>Bu ünvana çatdırılacaq (AZN 5.00)</p>
+                    </div>
+                    <div class="input-btn">
+                        <button>Sifarişi təsdiqlə</button>
                     </div>
                 </div>
-                <div class="img-box">
-                    <div class="img-box-top">
-                        <h3>Fall Release</h3>
-                        <p>The latest and greatest from our Fall collection</p>
-                    </div>
-                    <div class="img-box-bottom">
-                        <div class="box-left">
-                            <div class="box-left-top">
-                                <h3>Fall Release</h3>
-                                <p>The latest and greatest from our Fall collection</p>
+                <div class="main-right">
+                    <h3>Sifariş detalları</h3>
+                    <div class="main-product">
+                        <div class="main-product-info">
+                            <div class="product-info-img">
+                                <img src="../assets/images/keithBag.webp" alt="">
                             </div>
-                            <div class="box-left-bottom">
-                                <p><span><u>nazrinist</u></span> kodu ilə 10% endirim əldə edin</p>
-                            </div>
+                            <p>Charles&Keith çanta</p>
                         </div>
-                        <div class="box-right">
-                            <h3>Summer Release</h3>
-                            <p>The latest and greatest from our Summer collection</p>
+                        <div class="main-product-price">
+                            <p>AZN 165.00 x 1</p>
                         </div>
                     </div>
-                </div>
-                <div class="img-info">
-                    <div class="img-info-top">
-                        <ul>
-                            <Li>Asan.</Li>
-                            <Li>Güvənilir.</Li>
-                            <Li>Premium.</Li>
-                        </ul>
-                    </div>
-                    <div class="img-info-bottom">
-                        <h4>Brand Hunter ilə sevdiyiniz brendlərə daha yaxın olun</h4>
-                        <div class="img-info-btn">
-                            <input type="text" placeholder="Email ünvanınızı daxil edin">
-                            <i class="fa-solid fa-arrow-right"></i>
+                    <div class="main-cupon">
+                        <p><u>Kupon tətbiq et</u></p>
+                        <div class="cupon-hidden hidden">
+                            <input type="text">
+                            <span>Tətbiq et</span>
                         </div>
-                        <p>Abunə olaraq yeni məhsullardan və endirimlərdən xəbərdar ola bilərsiniz</p>
+                    </div>
+                    <div class="main-sum">
+                        <p>Cəm</p>
+                        <h4>AZN 165.00</h4>
+                    </div>
+                    <div class="main-cargo">
+                        <p>Çatdırılma</p>
+                        <h4>AZN 5.00</h4>
+                    </div>
+                    <div class="main-total">
+                        <p>Ümumi</p>
+                        <h4>AZN 170.00</h4>
                     </div>
                 </div>
             </div>
@@ -289,7 +295,7 @@
         </div>
     </footer>
 
-    <script src="./app.js"></script>
+    <script src="./login.js"></script>
 </body>
 
 </html>
