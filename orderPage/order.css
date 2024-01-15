@@ -1,0 +1,100 @@
+.main {
+    padding: 30px 25px;
+    display: flex;
+    gap: 30px;
+}
+
+.order-info {
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.order-info h2{
+    padding: 8px 0;
+}
+
+.order-info p span{
+    font-weight: bold;
+}
+
+.order-info p {
+    padding: 2px 0;
+}
+
+
+.order-info h3{
+    font-size: 22px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+.order-disc{
+    padding-top: 15px;
+}
+
+.order-disc h4{
+    font-weight: 500;
+}
+
+.middle-img{
+    width: 470px;
+}
+
+.middle-img img{
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.middle-sliders {
+    display: flex;
+}
+
+.middle-sliders button{
+    padding: 10px 15px;
+    border-radius: 50%;
+    background: inherit;
+    border: 1px solid rgba(128, 128, 128, 0.877);
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+.middle-sliders button:hover{
+    background: #ffdcdc;
+    border: none;
+}
+
+.middle-sliders .slider {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.order-size{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.order-size p{
+    font-weight: 300;
+}
+
+.order-size h4{
+    background: #ffdcdc;
+    cursor: pointer;
+    border: 3px solid black;
+    padding: 5px 20px;
+    border-radius: 30px;
+    font-size: 13px;
+}
+
+.order-color{
+    padding: 15px 0;
+    display: flex;
+    gap: 15px;
+}
+
+.order-color-img img{
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+}
