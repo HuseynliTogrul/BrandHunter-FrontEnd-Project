@@ -24,10 +24,6 @@ img {
     height: auto;
 }
 
-.hidden {
-    display: none;
-}
-
 /* body{
     min-height: 100vh;
 } */
@@ -157,7 +153,16 @@ img {
     border-radius: 15px;
     background: green;
     overflow: hidden;
-    display: none;
+    /* display: none; */
+}
+
+.list{
+    width: 65%;
+}
+
+.list-flex{
+    display: flex;
+    align-items: center;
 }
 
 .catalog-list .list{
@@ -475,6 +480,10 @@ img {
     padding: 3px 7px;
     border-radius: 7px;
     cursor: pointer;
+}
+
+.hidden {
+    display: none;
 }
 
 @media only screen and (min-width: 768px) {
