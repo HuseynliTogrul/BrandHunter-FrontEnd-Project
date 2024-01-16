@@ -6,7 +6,8 @@
     box-sizing: border-box;
 }
 
-ul,li{
+ul,
+li {
     list-style: none;
 }
 
@@ -145,56 +146,140 @@ img {
     cursor: pointer;
 }
 
-.catalog-list{
-    background: white;
-    display: flex;
-    flex-direction: column;
-    width: fit-content;
-    border-radius: 15px;
-    background: green;
-    overflow: hidden;
-    /* display: none; */
-}
-
-.list{
-    width: 65%;
-}
-
-.list-flex{
-    display: flex;
-    align-items: center;
-}
-
-.catalog-list .list{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 10px;
+.catalog-dropdown {
+    height: 100vh;
+    border-left: 1px solid #D9D9D9;
+    border-right: 1px solid #D9D9D9;
+    border-bottom: 1px solid #D9D9D9;
+    width: 256px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #FFF;
+    border-radius: 10px;
     cursor: pointer;
-    overflow: hidden;
-    padding: 15px 20px;
+    width: 85%;
 }
 
-.list-info{
+/* .catalog-dropdown {
+    border-left: 1px solid #D9D9D9;
+    border-right: 1px solid #D9D9D9;
+    border-bottom: 1px solid #D9D9D9;
+    width: 256px;
+    position: absolute;
+    top: 22%;
+    left: 6%;
+    z-index: 1;
+    background-color: #FFF;
+    border-radius: 10px;
+    cursor: pointer;
+} */
+
+.catalogHeader {
+    padding: 12px 16px;
+    border-bottom: 1px solid #D9D9D9;
+}
+
+.catalog-dropdown .catalogtype {
+    /* display: flex; */
+    /* padding: 12px 16px; */
+    justify-content: space-between;
+    transition: 100ms;
+    align-items: center;
+}
+
+.catalog-dropdown .catalogTypeTop:hover {
+    background-color: #D9D9D9;
+}
+
+.catalog-dropdown .catalogtype:hover i {
+    color: black;
+}
+
+.catalog-dropdown .catalogtype:hover .catalog-dropdown {
+    border: 0px;
+}
+
+.catalog-dropdown .catalogtype i {
+    width: 20px;
+    height: 20px;
+    color: #D9D9D9;
+    margin-top: 2.5%;
+    transition: 150ms ease-in;
+}
+
+.catalogTypeTop {
     display: flex;
-    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
 }
 
-.list-info img{
+.catalog-dropdown .catalogtype .catalogtype-left {
+    width: 70%;
+    display: flex;
+}
+
+.catalog-dropdown .catalogtype .catalogtype-left span {
+    margin-left: 8px;
+    font-weight: 500;
+}
+
+.catalog-dropdown .catalogtype .catalogtype-left .dropimg-box {
     width: 64px;
+    height: 25px;
 }
 
-.list-info p{
-    margin-right: 15px;
+.catalog-dropdown .catalogtype .catalogtype-left .dropimg-box img {
+    width: 64px;
+    height: 100%;
 }
 
-.list i{
-    font-size: 13px;
-    /* color: #80808078; */
+.catalog-dropdown .catalogtype .catalogtype-drop {
+    list-style-type: none;
+    background-color: #FFF;
+    display: none;
 }
 
-.catalog-list .list:hover{
-    background-color: rgb(189, 187, 187);
+.catalog-dropdown .catalogtype .catalogtype-drop li {
+    font-weight: 500;
+    height: 47px;
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+}
+
+.catalog-dropdown .catalogtype .catalogtype-drop li:hover {
+    /* background-color: #D9D9D9; */
+}
+
+.catalog-dropdown .catalogtype .canta-drop {
+    /* margin-top: 95px; */
+}
+
+.catalog-dropdown .catalogtype .geyim-drop {
+    /* margin-top: 48px; */
+}
+
+.catalog-dropdown .ayaqqabi:hover .ayaqqabi-drop {
+    display: block;
+}
+
+.catalog-dropdown .canta:hover .canta-drop {
+    display: block;
+}
+
+.catalog-dropdown .geyim:hover .geyim-drop {
+    display: block;
+}
+
+.catalog-dropdown .aksesuar:hover .aksesuar-drop {
+    display: block;
+}
+
+.catalog-dropdown .parfumeriya:hover .parfumeriya-drop {
+    display: block;
 }
 
 
@@ -203,6 +288,7 @@ img {
 /* main start */
 
 .main {
+    position: relative;
     border-bottom: 1px solid #e5e7eb;
 }
 
@@ -263,11 +349,11 @@ img {
     gap: 10px;
 }
 
-.img-bg-btn .goStore{
+.img-bg-btn .goStore {
     color: white;
 }
 
-.img-bg-btn a:first-child:hover{
+.img-bg-btn a:first-child:hover {
     background: black;
     color: white;
     border: none;
@@ -575,8 +661,6 @@ img {
     }
 }
 
-
-
 @media (min-width: 768px) and (max-width: 1024px) {
     .container {
         width: 90%;
@@ -590,7 +674,7 @@ img {
         flex-direction: row;
     }
 
-    .menu-list ul{
+    .menu-list ul {
         display: block;
         display: flex;
         gap: 10px;
@@ -677,9 +761,107 @@ img {
         font-size: 33px;
     }
 
-    .menu-list ul{
+    .menu-list ul {
         display: block;
         display: flex;
         gap: 10px;
+    }
+
+    .catalog-dropdown {
+        height: auto;
+        width: 256px;
+        border-left: 1px solid #D9D9D9;
+        border-right: 1px solid #D9D9D9;
+        border-bottom: 1px solid #D9D9D9;
+        width: 256px;
+        position: absolute;
+        top: 22%;
+        left: 7%;
+        z-index: 1;
+    }
+
+    .catalogHeader {
+        display: none;
+    }
+
+    .catalog-dropdown .catalogtype {
+        /* display: flex; */
+        /* padding: 12px 16px; */
+        justify-content: space-between;
+        transition: 100ms;
+        align-items: center;
+    }
+
+    .catalog-dropdown .catalogTypeTop:hover {
+        background-color: #D9D9D9;
+    }
+
+    .catalog-dropdown .catalogtype:hover i {
+        color: black;
+    }
+
+    .catalog-dropdown .catalogtype:hover .catalog-dropdown {
+        border: 0px;
+    }
+
+    .catalog-dropdown .catalogtype i {
+        width: 20px;
+        height: 20px;
+        color: #D9D9D9;
+        margin-top: 2.5%;
+        transition: 150ms ease-in;
+    }
+
+    .catalogTypeTop {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 16px;
+    }
+
+    .catalog-dropdown .catalogtype .catalogtype-left {
+        width: 70%;
+        display: flex;
+    }
+
+    .catalog-dropdown .catalogtype .catalogtype-left span {
+        margin-left: 8px;
+        font-weight: 500;
+    }
+
+    .catalog-dropdown .catalogtype .catalogtype-left .dropimg-box {
+        width: 64px;
+        height: 25px;
+    }
+
+    .catalog-dropdown .catalogtype .catalogtype-left .dropimg-box img {
+        width: 64px;
+        height: 100%;
+    }
+
+    .catalog-dropdown .catalogtype .catalogtype-drop {
+        list-style-type: none;
+        background-color: #FFF;
+        display: none;
+    }
+
+    .catalog-dropdown .catalogtype .catalogtype-drop li {
+        font-weight: 500;
+        height: 47px;
+        display: flex;
+        align-items: center;
+        padding-left: 10%;
+    }
+
+    .catalog-dropdown .catalogtype .catalogtype-drop li:hover {
+        /* background-color: #D9D9D9; */
+    }
+
+    .catalog-dropdown .catalogtype .canta-drop {
+        /* margin-top: 95px; */
+    }
+
+    .catalog-dropdown .catalogtype .geyim-drop {
+        /* margin-top: 48px; */
     }
 }
