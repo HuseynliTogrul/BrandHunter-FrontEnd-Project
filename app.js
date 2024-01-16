@@ -1,7 +1,19 @@
 "use strict"
 
-const catalogList = document.querySelector(".catalog-list")
+const navbarIcon = document.querySelector(".navbar-icon")
+const catalogDropdown = document.querySelector(".catalog-dropdown")
+const catalogTypeTop = document.querySelectorAll(".catalogTypeTop")
 
-catalogList.addEventListener("click", (e) =>{
-    e.classList.toggle("hidden");
+const catalogtypeDrop = document.querySelectorAll(".catalogtype-drop")
+const chevronIcon = document.querySelectorAll(".chevronIcon")
+
+navbarIcon.addEventListener("click", () => {
+    catalogDropdown.classList.toggle("hidden");
 })
+
+catalogTypeTop.forEach((catalog, index) => {
+    catalog.addEventListener("click", () => {
+        catalogtypeDrop[index].classList.toggle("hidden");
+        chevronIcon[index].classList.toggle("rotate");
+    });
+});
