@@ -40,13 +40,21 @@ itemSort.addEventListener("click", () => {
 itemHeader.forEach((item, index) => {
     item.addEventListener("click", () => {
         itemList[index].classList.toggle("hidden")
-        if (itemList[index].classList == "item-list hidden") {
-            itemHeaderIcon.src = `../assets/icons/plus.svg`;
 
-            console.log(1);
-        } else if(itemList[index].classList == "item-list") {
-            itemHeaderIcon.src = `../assets/icons/minus.svg`;
-            console.log(2);
+        if (itemHeaderIcon.src.endsWith('plus.svg')) {
+            itemHeaderIcon.src = '../assets/icons/minus.svg';
+        } else {
+            itemHeaderIcon.src = '../assets/icons/plus.svg';
         }
+
+
+        // if (itemList[index].classList === "hidden") {
+        //     itemHeaderIcon.src = `../assets/icons/plus.svg`;
+
+        //     console.log(1);
+        // } else if(itemList[index].classList === "item-list") {
+        //     itemHeaderIcon.src = `../assets/icons/minus.svg`;
+        //     console.log(2);
+        // }
     })
 });
