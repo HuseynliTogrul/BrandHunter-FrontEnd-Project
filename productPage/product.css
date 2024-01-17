@@ -33,6 +33,23 @@
     align-items: center;
     gap: 20px;
     justify-content: space-between;
+    transition: all 0.3s linear;
+}
+
+.item-header:hover{
+    background: #ffdcdc;
+}
+
+.item-sort{
+    padding: 10px;
+    /* border-bottom: 1px solid #e5e7eb; */
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+    border: 1px solid #e5e7eb;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
 }
 
 .item-list ul li{
@@ -76,7 +93,7 @@
     font-weight: 600;
     cursor: pointer;
     overflow: hidden;
-    width: fit-content;
+    width: 190px;
     margin-bottom: 30px;
 }
 
@@ -88,7 +105,7 @@
 
 .sort-list{
     font-weight: 400;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .sort-list ul li{
