@@ -14,6 +14,12 @@ const itemHeader = document.querySelectorAll(".item-header")
 const itemHeaderIcon = document.querySelector(".item-header img")
 const itemList = document.querySelectorAll(".item-list")
 
+const itemEl = document.querySelectorAll('.item');
+
+const itemListSpan = document.querySelectorAll(".itemListSpan")
+const itemListLi = document.querySelectorAll(".item-list ul li")
+
+
 
 navbarIcon.addEventListener("click", () => {
     catalogDropdown.classList.toggle("hidden");
@@ -37,24 +43,30 @@ itemSort.addEventListener("click", () => {
     sortList.classList.toggle("hidden");
 });
 
-itemHeader.forEach((item, index) => {
-    item.addEventListener("click", () => {
-        itemList[index].classList.toggle("hidden")
+// itemHeader.forEach((item, index) => {
+//     item.addEventListener("click", () => {
+//         itemList[index].classList.toggle("hidden")
+//     })
+// });
 
-        if (itemHeaderIcon.src.endsWith('plus.svg')) {
-            itemHeaderIcon.src = '../assets/icons/minus.svg';
+itemEl.forEach(item => {
+    const header = item.querySelector('.item-header');
+    const listEl = item.querySelector('.item-list');
+    const toggle = item.querySelector('.accordion-toggle');
+
+    header.addEventListener('click', () => {
+        if (listEl.style.display !== 'none') {
+            header.style.background = "#e5e7eb";
         } else {
-            itemHeaderIcon.src = '../assets/icons/plus.svg';
+            header.style.background = "#ffdcdc";
         }
+        listEl.style.display = listEl.style.display === 'none' ? 'block' : 'none';
+        toggle.textContent = listEl.style.display === 'none' ? '+' : '-';
+    });
+});
 
-
-        // if (itemList[index].classList === "hidden") {
-        //     itemHeaderIcon.src = `../assets/icons/plus.svg`;
-
-        //     console.log(1);
-        // } else if(itemList[index].classList === "item-list") {
-        //     itemHeaderIcon.src = `../assets/icons/minus.svg`;
-        //     console.log(2);
-        // }
-    })
+itemListLi.forEach((item,index) => {
+    item.addEventListener("click", () => {
+        itemListSpan[index].classList.toggle("hidden")
+    })    
 });

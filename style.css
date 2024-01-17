@@ -145,6 +145,21 @@ img {
     right: 20px;
 }
 
+.navbar-basket{
+    position: relative;
+}
+
+.navbar-basket p{
+    background: #ffdcdc;
+    position: absolute;
+    top: -12px;
+    right: -13px;
+    padding: 3px 8px;
+    border-radius: 50%;
+    font-size: 13px;
+    font-weight: 600;
+}
+
 .navbar-basket i {
     font-size: 25px;
     cursor: pointer;

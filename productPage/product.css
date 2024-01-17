@@ -52,6 +52,10 @@
     border-top-right-radius: 12px;
 }
 
+.item-list{
+    background: white;
+}
+
 .item-list ul li{
     display: flex;
     justify-content: space-between;
@@ -78,6 +82,14 @@
     padding-left: 10px;
     border-left: 1px solid #e8eaee;
 }
+
+.itemListSpan{
+    font-size: 14px;
+    padding: 6px 25px;
+    font-weight: 300;
+}
+
+
 
 /* .item-list ul li .colorB{
     width: 10px;
