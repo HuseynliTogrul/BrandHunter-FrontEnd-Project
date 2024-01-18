@@ -49,12 +49,15 @@
 }
 
 .middle-sliders {
+    width: 540px;
+    overflow: hidden;
     position: relative;
 }
 
 .sliders {
-    display: flex;
+    display: grid;
     gap: 10px;
+    grid-template-columns: repeat(5, 1fr);
 }
 
 .middle-sliders button {
@@ -83,14 +86,14 @@
 }
 
 .middle-sliders .slider {
-    width: 80px;
+    width: 100%;
     cursor: pointer;
 }
 
 .middle-sliders .slider img {
     border-radius: 7px;
-    height: 85px;
-    width: 85px;
+    height: 100px;
+    width: 100%;
 }
 
 .main-right {
@@ -173,4 +176,10 @@
     .middle-sliders button {
         display: none;
     }
+
+    /* .sliders {
+        display: flex;
+        gap: 10px;
+        grid-template-columns: repeat(5, 1fr);
+    } */
 }

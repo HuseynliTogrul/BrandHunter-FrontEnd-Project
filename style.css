@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -145,11 +156,11 @@ img {
     right: 20px;
 }
 
-.navbar-basket{
+.navbar-basket {
     position: relative;
 }
 
-.navbar-basket p{
+.navbar-basket p {
     background: #ffdcdc;
     position: absolute;
     top: -12px;
