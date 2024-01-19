@@ -1,18 +1,18 @@
-.main{
+.main {
     display: flex;
     padding: 25px 0;
     margin: 15px 25px 0 25px;
     gap: 50px;
 }
 
-.main-category{
+.main-category {
     width: 20%;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.item{
+.item {
     border: 1px solid #e5e7eb;
     border-radius: 12px;
     background: #e5e7eb;
@@ -21,7 +21,7 @@
     overflow: hidden;
 }
 
-.item:hover{
+.item:hover {
     /* background: #ffdcdc; */
     /* border: none; */
 }
@@ -36,11 +36,11 @@
     transition: all 0.3s linear;
 }
 
-.item-header:hover{
+.item-header:hover {
     background: #ffdcdc;
 }
 
-.item-sort{
+.item-sort {
     padding: 10px;
     /* border-bottom: 1px solid #e5e7eb; */
     display: flex;
@@ -52,53 +52,107 @@
     border-top-right-radius: 12px;
 }
 
-.item-list{
+.item-list {
+    display: none;
     background: white;
 }
 
-.item-list ul li{
+.item-list ul li {
     display: flex;
     justify-content: space-between;
+    gap: 10px;
     font-size: 14px;
     padding: 6px 10px;
     font-weight: 400;
 }
 
-.item-list ul li:last-child{
+.item-list ul li div {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #e8eaee;
+}
+
+.colorB {
+    background-color: black;
+}
+
+.colorW {
+    background-color: white;
+}
+
+.colorR {
+    background-color: red;
+}
+
+.colorG {
+    background-color: green;
+}
+
+.colorBl {
+    background-color: blue;
+}
+
+.colorBr {
+    background-color: rgba(165, 42, 42, 0.413);
+}
+
+.colorPu {
+    background-color: purple;
+}
+
+.colorPi {
+    background-color: pink;
+}
+
+.colorO {
+    background-color: orange;
+}
+
+.colorC {
+    background-color: rgb(253, 208, 215);
+}
+
+.colorM {
+    background-color: rgba(167, 65, 65, 0.413);
+}
+
+.colorGr {
+    background-color: gray;
+}
+
+.item-list ul li:last-child {
     padding-bottom: 12px;
 }
 
-.item-list ul li:hover{
+.item-list ul li:hover {
     background: #e8eaee;
 }
 
-.item-list ul li p{
+.item-list ul li p {
     display: flex;
     flex-direction: column;
     gap: 6px;
 }
 
-.item-list ul li p span{
+.item-list ul li p span {
     padding-left: 10px;
     border-left: 1px solid #e8eaee;
 }
 
-.itemListSpan{
+.itemListSpan {
     font-size: 14px;
     padding: 6px 25px;
     font-weight: 300;
 }
 
+.listSpan {
+    display: flex;
+    flex-direction: column;
+}
 
-
-/* .item-list ul li .colorB{
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: black;
-} */
-
-.product-sort{
+.product-sort {
+    position: absolute;
     border: 1px solid #e5e7eb;
     border-radius: 12px;
     background: #e5e7eb;
@@ -109,32 +163,33 @@
     margin-bottom: 30px;
 }
 
-.product-sort .item-header{
+.product-sort .item-header {
     gap: 40px;
     border-bottom: 1px solid #c4c5c8;
     border: none;
 }
 
-.sort-list{
+.sort-list {
     font-weight: 400;
     font-size: 13px;
 }
 
-.sort-list ul li{
+.sort-list ul li {
     padding: 5px 20px 5px 10px;
 }
 
-.sort-list ul li:hover{
+.sort-list ul li:hover {
     background: #ffdcdc;
 }
 
-.products{
+.products {
+    padding-top: 70px;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 30px;
 }
 
-.product-item img{
+.product-item img {
     height: 260px;
     width: 100%;
     border-radius: 20px;
@@ -144,21 +199,21 @@
     overflow: hidden; */
 }
 
-.product-item img:hover{
+.product-item img:hover {
     border: 1px solid #ff000047;
 }
 
-.product-item p{
+.product-item p {
     font-size: 12px;
     font-weight: 500;
 }
 
-.product-item span{
+.product-item span {
     font-size: 14px;
     font-weight: 700;
 }
 
-.product-btn{
+.product-btn {
     display: flex;
     justify-content: center;
     gap: 7px;
@@ -167,30 +222,30 @@
     text-align: center;
 }
 
-.product-btn button{
+.product-btn button {
     padding: 8px 15px;
     border-radius: 30px;
     background-color: inherit;
     cursor: pointer;
 }
 
-.product-btn button:hover{
+.product-btn button:hover {
     background-color: #c4c5c847;
 }
 
 
 @media (min-width: 768px) and (max-width: 1024px) {
-    .main-category{
+    .main-category {
         display: none;
     }
-    
+
     .product-sort {
         width: 100%;
     }
 }
 
 @media only screen and (max-width: 768px) {
-    .main-category{
+    .main-category {
         display: none;
     }
 
@@ -199,10 +254,10 @@
     }
 
     .products {
-        grid-template-columns: repeat(2,1fr);
-     }
+        grid-template-columns: repeat(2, 1fr);
+    }
 
-     .main-product{
+    .main-product {
         width: 100%;
-     }
+    }
 }

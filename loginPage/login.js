@@ -19,7 +19,7 @@ inputCheckbox.forEach((element) => {
 
         if (address.classList == "address hidden") {
             address.innerHTML = `<span class="address">(Seçimlik)</span>`
-        } else if(address.classList == "address"){
+        } else if (address.classList == "address") {
             address.innerHTML = `<span>*</span>`
         }
     })
