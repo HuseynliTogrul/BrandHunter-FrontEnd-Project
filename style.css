@@ -81,6 +81,7 @@ img {
 }
 
 .menu-bar {
+    height: 100vh;
     padding: 16px;
     width: calc(100% - 62px);
 }

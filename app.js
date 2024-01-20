@@ -9,6 +9,8 @@ const chevronIcon = document.querySelectorAll(".chevronIcon")
 
 const catalogItemsList = document.querySelectorAll(".catalog-dropdown ul")
 
+const logoMenu = document.querySelector(".logo-menu i")
+const menuBar = document.querySelector(".menu-bar")
 
 navbarIcon.addEventListener("click", () => {
     catalogDropdown.classList.toggle("hidden");
@@ -30,4 +32,8 @@ window.addEventListener("keydown", (e) => {
     if (e.key === "Escape") {
         catalogDropdown.classList.add("hidden");
     }
+})
+
+logoMenu.addEventListener("click",()=>{
+    menuBar.classList.toggle("hidden")
 })

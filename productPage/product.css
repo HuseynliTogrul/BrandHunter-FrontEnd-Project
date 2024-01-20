@@ -66,11 +66,22 @@
     font-weight: 400;
 }
 
-.item-list ul li div {
+.color ul li .colorList{
+    display: flex;
+    gap: 5px;
+}
+
+.item-list ul li .colorList div {
     width: 20px;
     height: 20px;
     border-radius: 50%;
     border: 1px solid #e8eaee;
+}
+
+.brendCheck,
+.sizeCheck,
+.colorCheck{
+    font-size: 12px;
 }
 
 .colorB {

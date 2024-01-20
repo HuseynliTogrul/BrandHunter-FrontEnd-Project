@@ -49,9 +49,9 @@
 }
 
 .middle-sliders {
-    width: 540px;
+    /* width: 540px; */
     overflow: hidden;
-    position: relative;
+    /* position: relative; */
 }
 
 .sliders {
@@ -62,7 +62,7 @@
 
 .middle-sliders button {
     position: absolute;
-    bottom: 40px;
+    bottom: 65px;
     height: 38px;
     padding: 10px 15px;
     border-radius: 50%;
@@ -73,11 +73,11 @@
 }
 
 .leftBtn {
-    left: -60px;
+    left: 32%;
 }
 
 .rightBtn {
-    right: -60px;
+    right: 20%;
 }
 
 .middle-sliders button:hover {
