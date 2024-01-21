@@ -1,0 +1,35 @@
+.item-discount{
+    position: absolute;
+    left: 37%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    background: #e5e7eb;
+    font-weight: 600;
+    cursor: pointer;
+    overflow: hidden;
+    width: 135px;
+    padding: 10px;
+}
+
+.item-discount i{
+    font-size: 14px;
+}
+
+.product-item{
+    width: 250px;
+}
+
+.price span:first-child{
+    text-decoration: line-through;
+    color: red;
+    font-size: 13px;
+}
+
+@media only screen and (max-width: 768px) {
+    .item-discount {
+        left: 50%;
+    }
+}
